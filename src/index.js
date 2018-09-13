@@ -1,4 +1,4 @@
-import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
+import { PolymerElement } from '@polymer/polymer/polymer-element.js';
 
 /**
  * `WhcgNumberFieldBox`
@@ -77,14 +77,13 @@ export class WhcgJsonMaker extends PolymerElement {
 			let defaultValue = 0;
 
 			if (this.fill) {
-				defaultValue = Number(this.value)
+				defaultValue = Number(this.value);
 			} 
 
 
             for (let i = 0; i < period; i++) {
                 dataset[i] = defaultValue;
-            };
-
+            }
             dataset[this.key] = Number(this.value);
            
             Object.assign(dataobj, {
@@ -227,4 +226,3 @@ export class WhcgJsonMaker extends PolymerElement {
 }
 
 window.customElements.define('whcg-json-maker', WhcgJsonMaker);
-
