@@ -72,7 +72,7 @@ export class WhcgJsonMaker extends PolymerElement {
 
             let dataset = {};
 
-			console.log(period);
+			// console.log(period);
 			
 			let defaultValue = 0;
 
@@ -107,8 +107,8 @@ export class WhcgJsonMaker extends PolymerElement {
 
         this.whcgjsonoutput = JSON.stringify(whcgObj);
 
-        console.log('!whcgObj');
-        console.log(whcgObj);
+        // console.log('!whcgObj');
+        // console.log(whcgObj);
     };
 
     // _valuearrayChanged() {
